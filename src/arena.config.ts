@@ -40,6 +40,15 @@ export default Arena({
         // Define "state_handler" room
         gameServer.define("relay_room", StateHandlerRoom)
             .enableRealtimeListing();
+        
+        gameServer.define("lobby_room", StateHandlerRoom)
+            .enableRealtimeListing();
+        
+        gameServer.define("audi_room", StateHandlerRoom)
+            .enableRealtimeListing();
+
+        gameServer.define("expo_room", StateHandlerRoom)
+            .enableRealtimeListing();
 
         // Define "auth" room
         gameServer.define("auth", AuthRoom)
